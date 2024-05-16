@@ -1,0 +1,106 @@
+:root{
+    --color_primary: #6284FF;
+    --color_secundary: white;
+}
+body{
+    background-image: url(../imagenes/fondo.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.circle{
+    height: 450px;
+    width: 450px;
+    background-color: var(--color_primary);
+    border-radius: 50%;
+}
+nav{
+    background-color: var(--color_primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 30px;
+    position: fixed;
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+li{
+    list-style: none;
+}
+li a{
+    color: var(--color_secundary);
+    text-decoration: none;
+}
+.sesion{
+    background-color: var(--color_secundary);
+    border: transparent;
+    border-radius: 15px;
+    padding: 5px 25px;
+    color: black;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh; 
+    text-align: center;
+}
+.container h1{
+    font-size: 32px;
+}
+.date {
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.40);
+    flex-direction: column;
+    padding: 20px 50px;
+    border-radius: 25px;
+    height: 60%;
+    width: 55%;
+}
+.date1{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 20px;
+    justify-content: center;
+}
+.date1 input,select{
+    background-color: var(--color_secundary);
+    border: 1px solid black;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    font-size: 17px;
+}
+textarea{
+    background-color: var(--color_secundary);
+    border: 1px solid black;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    font-size: 17px;
+}
+.agendar{
+    background-color: var(--color_primary);
+    border: transparent;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    margin-top: 20px;
+    width: 40%;
+    font-size: 20px;
+}
+
