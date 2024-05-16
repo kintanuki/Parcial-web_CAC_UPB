@@ -1,0 +1,27 @@
+:root{
+    --color_primary: #6284FF;
+    --color_secundary: white;
+}
+nav {
+    background-color: var(--color_primary);
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 50%; /* Opcional: ajusta el ancho deseado */
+    padding: 20px; /* Agrega espacio interno */
+    margin: 0 auto; /* Centra horizontalmente usando márgenes automáticos */
+    border-radius: 30px;
+    position: fixed;
+    left: 50%; /* Coloca el borde izquierdo del elemento en el 50% del ancho de la ventana */
+    transform: translateX(-50%); /* Centra el elemento horizontalmente */
+}
+li{
+    list-style: none;
+    color: white;
+}
+li button{
+    background-color: var(--color_secundary);
+    border: transparent;
+    border-radius: 15px;
+    padding: 5px 25px;
+}
