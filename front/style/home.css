@@ -9,39 +9,11 @@ body{
     background-size: cover;
     background-repeat: no-repeat; 
 }
-nav{
-    background-color: var(--color_primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 50%;
-    padding: 20px;
-    margin: 0 auto;
-    border-radius: 30px;
-    position: fixed;
-    left: 50%; 
-    transform: translateX(-50%); 
-}
-li{
-    list-style: none;
-}
-li a{
-    color: var(--color_secundary);
-    text-decoration: none;
-}
-.sesion{
-    background-color: var(--color_secundary);
-    border: transparent;
-    border-radius: 15px;
-    padding: 5px 25px;
-    color: black;
-}
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh; 
+    height: 80vh;
 }
 
 .text-person {
@@ -54,5 +26,5 @@ li a{
 }
 .text-person img{
     width: 25%;
-
 }
+

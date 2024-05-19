@@ -11,46 +11,75 @@
 </head>
 <body>
     <nav>
+        <a href="home.html"><img src="../imagenes/logo.png" alt="" class="logo"></a>
         <li>
-            <lu><img src="" alt=""></lu>
-            <lu><a href="home.html">Home</a></lu>
-            <lu><a href="agendar_cita.html">Agendar cita</a></lu>
-            <lu><a href="cita.html">Citas</a></lu>
-            <lu><a href="ticket.html">Obtener ticket</a></lu>
-            <lu><a href="login.html" class="sesion">Iniciar sesion</a></lu>
+            <ul><a href="home.html" class="opcion">Home</a></ul>
+            <ul><a href="agendar_cita.html" class="opcion">Agendar cita</a></ul>
+            <ul><a href="cita.html" class="opcion">Citas</a></ul>
+            <ul><a href="cola-ticket.html" class="opcion">Cola</a></ul>
+            <ul><a href="ticket.html" class="opcion">Obtener ticket</a></ul>
         </li>
+        <a href="login.html" class="sesion">Iniciar sesion</a>
     </nav>
+
     <main>
         <section class="container">
             <article class="date">
                 <h1>Modificar cita</h1>
                 <form action="">
                     <div class="date1">
-                        <input type="text" placeholder="Juan Diego Quintana Reyes">
-                        <input type="text" placeholder="Ingresa tu identificación">
+                        <div class="inf">
+                            <input type="text" placeholder="Ingresa tu nombre">
+                            <label for="">Nombre</label>
+                        </div>
+                        <div class="inf">
+                            <input type="text" placeholder="Ingresa tu identificación">
+                            <label for="">Identificación</label>
+                        </div>
                     </div>
                     <div class="date1">
-                        <input type="date">
-                        <input type="date">
+                        <div class="inf">
+                            <input type="date">
+                            <label for="">Fecha de nacimiento</label>
+                        </div>
+                        <div class="inf">
+                            <input type="date">
+                            <label for="">Fecha de la cita</label>
+                        </div>
                     </div>
                     <div class="date1">
-                        <input type="text" placeholder="Parque san remo 2 casa 41">
-                        <input type="time" placeholder="Hora">
+                        <div class="inf">
+                            <input type="text" placeholder="Dirección">
+                            <label for="">Dirección</label>
+                        </div>
+                        <div class="inf">
+                            <input type="time" placeholder="Hora">
+                            <label for="">Hora de la cita</label>
+                        </div>
                     </div>
                     <div class="date1">
-                        <select name="" id="">
-                            <option value="">Selecciona el tipo de cita</option>
-                            <option value="">Devoluciones</option>
-                            <option value="">Reclamos</option>
-                            <option value="">Asesorias</option>
-                        </select>
-                        <select name="" id="">
-                            <option value="">Selecciona el lugara de la cita</option>
-                            <option value="">Campus UPB seccional Bucaramanga</option>
-                        </select>                
+                        <div class="inf">
+                            <select name="" id="">
+                                <option value="">Selecciona el tipo de cita</option>
+                                <option value="">Devoluciones</option>
+                                <option value="">Reclamos</option>
+                                <option value="">Asesorias</option>
+                            </select>
+                            <label for="">Tipo de cita</label>
+                        </div>
+                        <div class="inf">
+                            <select name="" id="">
+                                <option value="">Selecciona el lugara de la cita</option>
+                                <option value="">Campus UPB seccional Bucaramanga</option>
+                            </select>                
+                            <label for="">Lugar de la cita</label>
+                        </div>
                     </div>
-                    <textarea name="" id="" placeholder="Quisiera agendar una cita para presentar un reclamo relacionado con el servicio que he recibido. Durante la reunión, me gustaría discutir los problemas que he experimentado, revisar los detalles pertinentes y trabajar juntos para encontrar una solución satisfactoria. Llevaré toda la documentación relevante que pueda ayudar a clarificar mi reclamo. Espero que podamos resolver este problema de manera efectiva y con prontitud."></textarea>
-                    <a class="agendar"id="agendar">Modificar cita</a>
+                    <div class="inf">
+                        <textarea name="" id="" placeholder="Ingresa la descripcion de la cita"></textarea>
+                        <label for="">Descripción de la cita</label>
+                    </div>
+                    <a class="agendar"id="agendar">Agendar cita</a>
                 </form>
             </article>
         </section>

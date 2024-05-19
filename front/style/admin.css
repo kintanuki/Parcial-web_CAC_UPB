@@ -27,7 +27,7 @@ body{
 .container h1{
     font-size: 32px;
 }
-.info-ticket {
+.info-admin {
     display: flex;
     justify-content: space-evenly;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.40);
@@ -36,7 +36,7 @@ body{
     border-radius: 25px;
     width: 50%;
 }
-.info-ticket p{
+.info-admin p{
     font-size: 18px;
 }
 button{
@@ -80,5 +80,7 @@ button{
     background-color: var(--color_primary);
     color: var(--color_secundary);
     cursor: pointer;
+    transform: translateY(-10px);
+    transition: transform 0.6s ease;
 }
 

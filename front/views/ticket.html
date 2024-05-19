@@ -10,26 +10,34 @@
 </head>
 <body>
     <nav>
+        <a href="home.html"><img src="../imagenes/logo.png" alt="" class="logo"></a>
         <li>
-            <lu><img src="" alt=""></lu>
-            <lu><a href="home.html">Home</a></lu>
-            <lu><a href="agendar_cita.html">Agendar cita</a></lu>
-            <lu><a href="cita.html">Citas</a></lu>
-            <lu><a href="ticket.html">Obtener ticket</a></lu>
-            <lu><a href="login.html" class="sesion">Iniciar sesion</a></lu>
+            <ul><a href="home.html" class="opcion">Home</a></ul>
+            <ul><a href="agendar_cita.html" class="opcion">Agendar cita</a></ul>
+            <ul><a href="cita.html" class="opcion">Citas</a></ul>
+            <ul><a href="cola-ticket.html" class="opcion">Cola</a></ul>
+            <ul><a href="ticket.html" class="opcion">Obtener ticket</a></ul>
         </li>
+        <a href="login.html" class="sesion">Iniciar sesion</a>
     </nav>
+
     <main>
         <section class="container">
                 <article class="info-ticket">
                     <h1>Obten tu ticket</h1>
                     <p>En este apartado puedes obtener tu ticket para estar en la cola de las personas que van llegando
-                        dale al boton “obtener ticket” y este se generara automaticamente</p>
-                        <button>Obtener ticket</button>
+                        . Ingresa tu númeor de identificación y dale al boton “obtener ticket” y este se generara automaticamente</p>
+                        <h2>Ingresa tu número de identificación</h2>
+                        <form action="">
+                            <input type="number" placeholder="Número de identificación">
+                            <button>Obtener ticket</button>    
+                        </form>
                 </article>
                 <article class="ticket">
-                    <h1>Tu turno</h1>
-                    <h2>10</h2>
+                    <i class="bi bi-ticket icon-ticket" ></i>
+                    <p>Tu turno</p>
+                    <p>J-20</p>
+                    <p>Banco F</p>
                 </article>
         </section>
     </main>
