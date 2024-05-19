@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../style/agendar.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/nav.css">
+    <link rel="stylesheet" href="../style/agendar.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" rel="stylesheet">
     <title>CAC-UPB</title>
 </head>
@@ -13,42 +15,62 @@
             <lu><img src="" alt=""></lu>
             <lu><a href="home.html">Home</a></lu>
             <lu><a href="agendar_cita.html">Agendar cita</a></lu>
-            <lu><a href="">Citas</a></lu>
-            <lu><a href="">Obtener ticket</a></lu>
-            <lu><a href="" class="sesion">Iniciar sesion</a></lu>
+            <lu><a href="cita.html">Citas</a></lu>
+            <lu><a href="ticket.html">Obtener ticket</a></lu>
+            <lu><a href="login.html" class="sesion">Iniciar sesion</a></lu>
         </li>
     </nav>
     <main>
         <section class="container">
-            <h1>Agenta tu cita</h1>
             <article class="date">
-                <div class="date1">
-                    <input type="text" placeholder="Ingresa tu nombre">
-                    <input type="text" placeholder="Ingresa tu identificación">
-                </div>
-                <div class="date1">
-                    <input type="text" placeholder="Ingresa tu apellido">
-                    <input type="date">
-                </div>
-                <div class="date1">
-                    <input type="text" placeholder="Dirección">
-                    <input type="time" placeholder="Hora">
-                </div>
-                <div class="date1">
-                    <select name="" id="">
-                        <option value="">Selecciona el tipo de cita</option>
-                        <option value="">Devoluciones</option>
-                    </select>
-                    <select name="" id="">
-                        <option value="">Selecciona el lugara de la cita</option>
-                        <option value="">Campus UPB seccional Bucaramanga</option>
-                    </select>                
-                </div>
-                <textarea name="" id="" placeholder="Ingresa la descripcion de la cita"></textarea>
-                <input type="submit" class="agendar" value="Agendar cita">
+                <h1>Agenta tu cita</h1>
+                <form action="">
+                    <div class="date1">
+                        <input type="text" placeholder="Ingresa tu nombre">
+                        <input type="text" placeholder="Ingresa tu identificación">
+                    </div>
+                    <div class="date1">
+                        <input type="text" placeholder="Ingresa tu apellido">
+                        <input type="date">
+                    </div>
+                    <div class="date1">
+                        <input type="text" placeholder="Dirección">
+                        <input type="time" placeholder="Hora">
+                    </div>
+                    <div class="date1">
+                        <select name="" id="">
+                            <option value="">Selecciona el tipo de cita</option>
+                            <option value="">Devoluciones</option>
+                            <option value="">Reclamos</option>
+                            <option value="">Asesorias</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">Selecciona el lugara de la cita</option>
+                            <option value="">Campus UPB seccional Bucaramanga</option>
+                        </select>                
+                    </div>
+                    <textarea name="" id="" placeholder="Ingresa la descripcion de la cita"></textarea>
+                    <a class="agendar"id="agendar">Agendar cita</a>
+                </form>
             </article>
         </section>
+        <div id="agendar_cita" class="modal">
+            <div class="modal-content">
+                <span class="cerrar" onclick="cerrar()">&times;</span>
+                <p>Seguro que quieres agendar esta cita?</p>
+            </div>
+        </div>
     </main>
 </body>
+<script>
+    document.getElementById('agendar').addEventListener('click', abrir);
 
+    function abrir() {
+        document.getElementById('agendar_cita').style.display = 'block';
+    }
+
+    function cerrar() {
+        document.getElementById('agendar_cita').style.display = 'none';
+    }
+</script>
 </html>

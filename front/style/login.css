@@ -9,41 +9,47 @@ body{
     background-size: cover;
     background-repeat: no-repeat; 
 }
-
+.circle{
+    height: 450px;
+    width: 450px;
+    background-color: var(--color_primary);
+    border-radius: 50%;
+}
+.sesion{
+    background-color: var(--color_secundary);
+    border: transparent;
+    border-radius: 15px;
+    padding: 5px 25px;
+    color: black;
+}
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     align-items: center;
-    height: 100vh; 
+    height: 80vh; 
     text-align: center;
 }
 .container h1{
     font-size: 32px;
 }
-.date {
+article {
     display: flex;
     justify-content: space-evenly;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.40);
     flex-direction: column;
     padding: 20px 50px;
     border-radius: 25px;
-    width: 55%;
+    gap: 50px;
+    width: 30%;
 }
 form{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-}
-.date1{
-    display: flex;
-    flex-direction: row;
     gap: 50px;
-    margin: 20px;
-    justify-content: center;
 }
-.date1 input,select{
+article input{
     background-color: var(--color_secundary);
     border: 1px solid black;
     padding: 10px 15px;
@@ -54,23 +60,13 @@ form{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.40);
     font-size: 17px;
 }
-textarea{
-    background-color: var(--color_secundary);
-    border: 1px solid black;
-    padding: 10px 15px;
-    font-size: 13px;
-    border-radius: 8px;
-    outline: none;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.40);
-    font-size: 17px;
-}
-.agendar{
+
+.iniciar{
     background-color: var(--color_primary);
     border: transparent;
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
     color: white;
-    margin-top: 20px;
     width: 40%;
     font-size: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.40);
@@ -79,35 +75,3 @@ textarea{
     left: 30%;
 }
 
-.modal {
-    display: none; /* Oculta la ventana modal por defecto */
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-    padding-top: 60px;
-}
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
-.cerrar {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-.cerrar:hover,
-.cerrar:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
