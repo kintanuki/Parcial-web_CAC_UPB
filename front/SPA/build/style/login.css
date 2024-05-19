@@ -1,0 +1,79 @@
+:root{
+    --color_primary: #6284FF;
+    --color_secundary: white;
+}
+body{
+    background-image: url(../imagenes/fondo.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.circle{
+    height: 450px;
+    width: 450px;
+    background-color: var(--color_primary);
+    border-radius: 50%;
+}
+.sesion{
+    background-color: var(--color_secundary);
+    border: transparent;
+    border-radius: 15px;
+    padding: 5px 25px;
+    color: black;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh; 
+    text-align: center;
+}
+.container h1{
+    font-size: 45px;
+}
+article {
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.40);
+    flex-direction: column;
+    padding: 20px 50px;
+    border-radius: 25px;
+    gap: 50px;
+    width: 30%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+article input{
+    background-color: var(--color_secundary);
+    border: transparent;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.40);
+    font-size: 20px;
+}
+
+.iniciar{
+    background-color: var(--color_primary);
+    border: transparent;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    width: 40%;
+    font-size: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.40);
+    cursor: pointer;
+    position: relative;
+    left: 30%;
+    font-size: 25px;
+}
+

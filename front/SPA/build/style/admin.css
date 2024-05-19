@@ -1,0 +1,86 @@
+:root{
+    --color_primary: #6284FF;
+    --color_secundary: white;
+}
+body{
+    background-image: url(../imagenes/fondo.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.sesion{
+    background-color: var(--color_secundary);
+    border: transparent;
+    border-radius: 15px;
+    padding: 5px 25px;
+    color: black;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.container h1{
+    font-size: 32px;
+}
+.info-admin {
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.40);
+    flex-direction: column;
+    padding: 20px 50px;
+    border-radius: 25px;
+    width: 50%;
+}
+.info-admin p{
+    font-size: 18px;
+}
+button{
+    background-color: var(--color_primary);
+    border: transparent;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    width: 40%;
+    font-size: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.40);
+    cursor: pointer;
+    position: relative;
+    left: 30%;
+    margin-top: 10px;
+}
+.reportes{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+.reporte{
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.40);
+    flex-direction: column;
+    padding: 20px 50px;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 80px;
+    width: 15%;
+    height: 200px;
+}
+.reportes h1{
+    font-size: 25px;
+}
+.icons{
+    font-size: 3rem;
+}
+.reporte:hover{
+    background-color: var(--color_primary);
+    color: var(--color_secundary);
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: transform 0.6s ease;
+}
+

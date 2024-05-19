@@ -1,0 +1,30 @@
+:root{
+    --color_primary: #6284FF;
+    --color_secundary: white;
+}
+body{
+    background-image: url(../imagenes/fondo.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.text-person {
+    display: flex;
+    justify-content: space-evenly;
+}
+.text-person p{
+    width: 30%;
+    font-size: 20px;
+}
+.text-person img{
+    width: 25%;
+}
+
