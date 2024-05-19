@@ -55,17 +55,8 @@ button{
 }
 .reportes{
     display: flex;
+    justify-content: center;
     gap: 200px;
-}
-.cancelados{
-    display: flex;
-    justify-content: space-evenly;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.40);
-    flex-direction: column;
-    padding: 20px 50px;
-    border-radius: 25px;
-    text-align: center;
-    margin-top: 80px;
 }
 .reporte{
     display: flex;
@@ -76,4 +67,18 @@ button{
     border-radius: 25px;
     text-align: center;
     margin-top: 80px;
+    width: 15%;
+    height: 200px;
 }
+.reportes h1{
+    font-size: 25px;
+}
+.icons{
+    font-size: 3rem;
+}
+.reporte:hover{
+    background-color: var(--color_primary);
+    color: var(--color_secundary);
+    cursor: pointer;
+}
+
